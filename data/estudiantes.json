@@ -1,0 +1,24 @@
+
+[
+  {
+    "nombre": "Ana",
+    "edad": 20,
+    "carrera": "Negocios Internacionales",
+    "semestre": 4,
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Carlos",
+    "edad": 22,
+    "carrera": "Administracion",
+    "semestre": 8,
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Pedro",
+    "edad": 21,
+    "carrera": "Ingenieria de Sistemas",
+    "semestre": 6,
+    "estado": "Inactivo"
+  }
+]
