@@ -21,22 +21,4 @@ db.estudiantes.find({
   estado: { $ne: "Activo" }
 });
 
-// 5. Insertar un nuevo estudiante
-db.estudiantes.insertOne({
-  nombre: "Laura",
-  edad: 23,
-  carrera: "Economia",
-  semestre: 7,
-  estado: "Activo"
-});
 
-// 6. Actualizar un campo del estudiante
- db.estudiantes.updateOne(
-  { nombre: "Laura" },
-  { $set: { semestre: 8 } }
-)
-
-// 7. Elimina todo el documento de la colección
-db.estudiantes.deleteOne({
-  nombre: "Pedro"
-})
