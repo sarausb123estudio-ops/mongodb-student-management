@@ -29,3 +29,14 @@ db.estudiantes.insertOne({
   semestre: 7,
   estado: "Activo"
 });
+
+// 6. Actualizar un campo del estudiante
+ db.estudiantes.updateOne(
+  { nombre: "Laura" },
+  { $set: { semestre: 8 } }
+)
+
+// 7. Elimina todo el documento de la colección
+db.estudiantes.deleteOne({
+  nombre: "Pedro"
+})
