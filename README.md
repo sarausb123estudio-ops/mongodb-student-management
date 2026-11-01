@@ -108,3 +108,14 @@ Through this project, I practiced MongoDB document structures, JSON data import,
 - Add data validation.
 - Create database indexes.
 - Document additional queries and tests.
+
+
+## 📸 Query Execution Evidence
+
+### Active Students Query
+
+The following screenshot shows the successful execution
+of a MongoDB query filtering active students.
+
+![Active Students Query](screenshots/active-students.png)
+
