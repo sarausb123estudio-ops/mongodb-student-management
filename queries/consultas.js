@@ -20,3 +20,12 @@ db.estudiantes.find({
 db.estudiantes.find({
   estado: { $ne: "Activo" }
 });
+
+// 5. Insertar un nuevo estudiante
+db.estudiantes.insertOne({
+  nombre: "Laura",
+  edad: 23,
+  carrera: "Economia",
+  semestre: 7,
+  estado: "Activo"
+});
