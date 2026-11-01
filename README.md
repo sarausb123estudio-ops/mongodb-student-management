@@ -119,3 +119,30 @@ of a MongoDB query filtering active students.
 
 ![Active Students Query](screenshots/active-students.png)
 
+
+## 📂 Project Structure
+
+```text
+mongodb-student-management/
+├── data/
+│   └── estudiantes.json
+├── queries/
+│   ├── consultas.js
+│   └── operaciones_crud.js
+├── screenshots/
+│   ├── README.md
+│   └── active-students.png
+└── README.md
+```
+
+### Project Files
+
+- **data/**: Sample student data in JSON format.
+- **queries/consultas.js**: MongoDB read queries.
+- **queries/operaciones_crud.js**: Insert, update, and delete operations.
+- **screenshots/**: Evidence of queries executed in MongoDB Compass.
+- **README.md**: Project documentation.
+
+> Note: CRUD operations modify database records and should only be executed individually in a test environment.
+
+
