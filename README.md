@@ -146,3 +146,50 @@ mongodb-student-management/
 > Note: CRUD operations modify database records and should only be executed individually in a test environment.
 
 
+## Python ETL Pipeline
+
+This project includes a Python ETL pipeline that extracts student data from JSON, transforms academic program names to uppercase, and loads the results into MongoDB.
+
+### Pipeline Stages
+
+- **Extract:** Read student records from a JSON file.
+- **Transform:** Convert academic program names to uppercase.
+- **Load:** Insert or update records in MongoDB using PyMongo.
+
+### Execution
+
+Install the required dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Make sure the local MongoDB server is running.
+
+From the project root, run:
+
+```bash
+python src/cargar_estudiantes.py
+```
+
+### Execution Results
+
+| Metric | First Run | Second Run |
+|---|---|---|
+| Extracted records | 3 | 3 |
+| Transformed records | 3 | 3 |
+| Inserted records | 3 | 0 |
+| Updated records | 0 | 0 |
+| Total MongoDB records | 3 | 3 |
+
+The pipeline uses upsert operations and a unique index on student names to prevent duplicates in this sample dataset.
+
+### Technologies
+
+- Python
+- PyMongo
+- MongoDB
+- JSON
+
+
+
